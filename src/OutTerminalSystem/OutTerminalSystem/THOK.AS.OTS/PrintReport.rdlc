@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="DummyDataSource">
+      <ConnectionProperties>
+        <ConnectString>Data Source=.\sqlexpress;Initial Catalog=SortDB;Persist Security Info=True;User ID=sa;Password=123456</ConnectString>
+        <DataProvider>SQL</DataProvider>
+      </ConnectionProperties>
+      <rd:DataSourceID>a56f9762-6334-486f-890c-825f5aa0b1d3</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <BottomMargin>2.5cm</BottomMargin>
+  <RightMargin>2.5cm</RightMargin>
+  <PageWidth>21cm</PageWidth>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <List Name="list1">
+        <ReportItems>
+          <Table Name="table1">
+            <Footer>
+              <TableRows>
+                <TableRow>
+                  <TableCells>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="CIGARETTECODE">
+                          <rd:DefaultName>CIGARETTECODE</rd:DefaultName>
+                          <ZIndex>5</ZIndex>
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <FontFamily>宋体</FontFamily>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <Value>=First(Fields!CIGARETTECODE.Value)</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="BATCHNO">
+                          <rd:DefaultName>BATCHNO</rd:DefaultName>
+                          <ZIndex>4</ZIndex>
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <FontFamily>宋体</FontFamily>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <Value>=First(Fields!BATCHNO.Value)</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="SCDATE">
+                          <rd:DefaultName>SCDATE</rd:DefaultName>
+                          <ZIndex>3</ZIndex>
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <FontFamily>宋体</FontFamily>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <Value>=First(Fields!SCDATE.Value)</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                  </TableCells>
+                  <Height>0.63492cm</Height>
+                </TableRow>
+              </TableRows>
+            </Footer>
+            <Details>
+              <TableRows>
+                <TableRow>
+                  <TableCells>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="CUSTOMERCODE">
+                          <rd:DefaultName>CUSTOMERCODE</rd:DefaultName>
+                          <ZIndex>2</ZIndex>
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <FontFamily>宋体</FontFamily>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <Value>=Fields!CUSTOMERCODE.Value</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="CUSTOMERNAME">
+                          <rd:DefaultName>CUSTOMERNAME</rd:DefaultName>
+                          <ZIndex>1</ZIndex>
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <FontFamily>宋体</FontFamily>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <Value>=Fields!CUSTOMERNAME.Value</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="ORDERDATE">
+                          <rd:DefaultName>ORDERDATE</rd:DefaultName>
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <FontFamily>宋体</FontFamily>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <Value>=Fields!ORDERDATE.Value</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                  </TableCells>
+                  <Height>0.63492cm</Height>
+                </TableRow>
+              </TableRows>
+            </Details>
+            <Style>
+              <FontFamily>宋体</FontFamily>
+            </Style>
+            <Header>
+              <TableRows>
+                <TableRow>
+                  <TableCells>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="SORTNO">
+                          <rd:DefaultName>SORTNO</rd:DefaultName>
+                          <ZIndex>8</ZIndex>
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <FontFamily>宋体</FontFamily>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <Value>=First(Fields!SORTNO.Value)</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="SORTNO_1">
+                          <rd:DefaultName>SORTNO_1</rd:DefaultName>
+                          <ZIndex>7</ZIndex>
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <FontFamily>宋体</FontFamily>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <Value>=First(Fields!SORTNO.Value)</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="ORDERNO">
+                          <rd:DefaultName>ORDERNO</rd:DefaultName>
+                          <ZIndex>6</ZIndex>
+                          <Style>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <FontFamily>宋体</FontFamily>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <Value>=First(Fields!ORDERNO.Value)</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                  </TableCells>
+                  <Height>0.63492cm</Height>
+                </TableRow>
+              </TableRows>
+            </Header>
+            <TableColumns>
+              <TableColumn>
+                <Width>3.33333cm</Width>
+              </TableColumn>
+              <TableColumn>
+                <Width>3.33333cm</Width>
+              </TableColumn>
+              <TableColumn>
+                <Width>3.33333cm</Width>
+              </TableColumn>
+            </TableColumns>
+            <Height>1.90476cm</Height>
+          </Table>
+        </ReportItems>
+        <DataSetName>PrintDataSet_PrintDataSet</DataSetName>
+        <Top>1cm</Top>
+        <Style>
+          <FontFamily>宋体</FontFamily>
+        </Style>
+        <Grouping Name="list1_Details_Group">
+          <PageBreakAtEnd>true</PageBreakAtEnd>
+          <Parent>=Fields!ROUTENAME.Value</Parent>
+          <GroupExpressions>
+            <GroupExpression>=Fields!CUSTOMERCODE.Value</GroupExpression>
+          </GroupExpressions>
+        </Grouping>
+      </List>
+    </ReportItems>
+    <Height>11.11905cm</Height>
+  </Body>
+  <rd:ReportID>a0dbe833-03d9-4207-94af-22ddf10a55a8</rd:ReportID>
+  <LeftMargin>2.5cm</LeftMargin>
+  <DataSets>
+    <DataSet Name="PrintDataSet_PrintDataSet">
+      <rd:DataSetInfo>
+        <rd:DataSetName>PrintDataSet</rd:DataSetName>
+        <rd:TableName>PrintDataSet</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText />
+        <DataSourceName>DummyDataSource</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="SORTNO">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>SORTNO</DataField>
+        </Field>
+        <Field Name="ORDERID">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>ORDERID</DataField>
+        </Field>
+        <Field Name="CUSTOMERCODE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CUSTOMERCODE</DataField>
+        </Field>
+        <Field Name="CUSTOMERNAME">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CUSTOMERNAME</DataField>
+        </Field>
+        <Field Name="CIGARETTECODE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CIGARETTECODE</DataField>
+        </Field>
+        <Field Name="CIGARETTENAME">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CIGARETTENAME</DataField>
+        </Field>
+        <Field Name="QUANTITY">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>QUANTITY</DataField>
+        </Field>
+        <Field Name="BATCHNO">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>BATCHNO</DataField>
+        </Field>
+        <Field Name="ORDERNO">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>ORDERNO</DataField>
+        </Field>
+        <Field Name="ROUTECODE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>ROUTECODE</DataField>
+        </Field>
+        <Field Name="ROUTENAME">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>ROUTENAME</DataField>
+        </Field>
+        <Field Name="ORDERDATE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>ORDERDATE</DataField>
+        </Field>
+        <Field Name="SCDATE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>SCDATE</DataField>
+        </Field>
+        <Field Name="LINECODE">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>LINECODE</DataField>
+        </Field>
+        <Field Name="ZZBS">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>ZZBS</DataField>
+        </Field>
+        <Field Name="ADDRESS">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>ADDRESS</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <Width>10cm</Width>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <Language>zh-CN</Language>
+  <TopMargin>2.5cm</TopMargin>
+  <PageHeight>29.7cm</PageHeight>
+</Report>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OutDataSet" targetNamespace="http://tempuri.org/OutDataSet.xsd" xmlns:mstns="http://tempuri.org/OutDataSet.xsd" xmlns="http://tempuri.org/OutDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OutDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="OutDataSet" msprop:Generator_DataSetName="OutDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="OutDataTable" msprop:Generator_UserTableName="OutDataTable" msprop:Generator_RowDeletedName="OutDataTableRowDeleted" msprop:Generator_TableClassName="OutDataTableDataTable" msprop:Generator_RowChangedName="OutDataTableRowChanged" msprop:Generator_RowClassName="OutDataTableRow" msprop:Generator_RowChangingName="OutDataTableRowChanging" msprop:Generator_RowEvArgName="OutDataTableRowChangeEvent" msprop:Generator_RowEvHandlerName="OutDataTableRowChangeEventHandler" msprop:Generator_TablePropName="OutDataTable" msprop:Generator_TableVarName="tableOutDataTable" msprop:Generator_RowDeletingName="OutDataTableRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="订单日期" msprop:Generator_UserColumnName="订单日期" msprop:Generator_ColumnPropNameInRow="订单日期" msprop:Generator_ColumnVarNameInTable="column订单日期" msprop:Generator_ColumnPropNameInTable="订单日期Column" type="xs:string" minOccurs="0" />
+              <xs:element name="批次" msprop:Generator_UserColumnName="批次" msprop:Generator_ColumnPropNameInRow="批次" msprop:Generator_ColumnVarNameInTable="column批次" msprop:Generator_ColumnPropNameInTable="批次Column" type="xs:string" minOccurs="0" />
+              <xs:element name="分拣线" msprop:Generator_UserColumnName="分拣线" msprop:Generator_ColumnPropNameInRow="分拣线" msprop:Generator_ColumnVarNameInTable="column分拣线" msprop:Generator_ColumnPropNameInTable="分拣线Column" type="xs:string" minOccurs="0" />
+              <xs:element name="线路代码" msprop:Generator_UserColumnName="线路代码" msprop:Generator_ColumnPropNameInRow="线路代码" msprop:Generator_ColumnVarNameInTable="column线路代码" msprop:Generator_ColumnPropNameInTable="线路代码Column" type="xs:string" minOccurs="0" />
+              <xs:element name="线路名称" msprop:Generator_UserColumnName="线路名称" msprop:Generator_ColumnPropNameInRow="线路名称" msprop:Generator_ColumnVarNameInTable="column线路名称" msprop:Generator_ColumnPropNameInTable="线路名称Column" type="xs:string" minOccurs="0" />
+              <xs:element name="区域代码" msprop:Generator_UserColumnName="区域代码" msprop:Generator_ColumnPropNameInRow="区域代码" msprop:Generator_ColumnVarNameInTable="column区域代码" msprop:Generator_ColumnPropNameInTable="区域代码Column" type="xs:string" minOccurs="0" />
+              <xs:element name="区域名称" msprop:Generator_UserColumnName="区域名称" msprop:Generator_ColumnPropNameInRow="区域名称" msprop:Generator_ColumnVarNameInTable="column区域名称" msprop:Generator_ColumnPropNameInTable="区域名称Column" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0031_号包装机包数" msprop:Generator_UserColumnName="1号包装机包数" msprop:Generator_ColumnPropNameInRow="_1号包装机包数" msprop:Generator_ColumnVarNameInTable="column1号包装机包数" msprop:Generator_ColumnPropNameInTable="_1号包装机包数Column" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0032_号包装机包数" msprop:Generator_UserColumnName="2号包装机包数" msprop:Generator_ColumnPropNameInRow="_2号包装机包数" msprop:Generator_ColumnVarNameInTable="column2号包装机包数" msprop:Generator_ColumnPropNameInTable="_2号包装机包数Column" type="xs:string" minOccurs="0" />
+              <xs:element name="总数量" msprop:Generator_UserColumnName="总数量" msprop:Generator_ColumnPropNameInRow="总数量" msprop:Generator_ColumnVarNameInTable="column总数量" msprop:Generator_ColumnPropNameInTable="总数量Column" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

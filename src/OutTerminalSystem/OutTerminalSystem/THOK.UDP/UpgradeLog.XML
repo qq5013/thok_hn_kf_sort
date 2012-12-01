@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="THOK.UDP">
+</Property><Property Name="解决方案文件" Value="C:\Users\dell\Desktop\temp\相关的基础框架\THOK.UDP\THOK.UDP.sln">
+</Property><Property Name="Date" Value="2011年4月22日">
+</Property><Property Name="Time" Value="0:06:21">
+</Property></Properties><Event ErrorLevel="0" Project="THOK.UDP" Source="THOK.UDP.csproj" Description="项目文件已成功备份为 C:\Users\dell\Desktop\temp\相关的基础框架\THOK.UDP\Backup\THOK.UDP.csproj">
+</Event><Event ErrorLevel="0" Project="THOK.UDP" Source="Client.cs" Description="文件已成功备份为 C:\Users\dell\Desktop\temp\相关的基础框架\THOK.UDP\Backup\Client.cs">
+</Event><Event ErrorLevel="0" Project="THOK.UDP" Source="Dispatch\DispatchClient.cs" Description="文件已成功备份为 C:\Users\dell\Desktop\temp\相关的基础框架\THOK.UDP\Backup\Dispatch\DispatchClient.cs">
+</Event><Event ErrorLevel="0" Project="THOK.UDP" Source="Dispatch\DispatchServer.cs" Description="文件已成功备份为 C:\Users\dell\Desktop\temp\相关的基础框架\THOK.UDP\Backup\Dispatch\DispatchServer.cs">
+</Event><Event ErrorLevel="0" Project="THOK.UDP" Source="Message.cs" Description="文件已成功备份为 C:\Users\dell\Desktop\temp\相关的基础框架\THOK.UDP\Backup\Message.cs">
+</Event><Event ErrorLevel="0" Project="THOK.UDP" Source="Dispatch\ServerEventArgs.cs" Description="文件已成功备份为 C:\Users\dell\Desktop\temp\相关的基础框架\THOK.UDP\Backup\Dispatch\ServerEventArgs.cs">
+</Event><Event ErrorLevel="0" Project="THOK.UDP" Source="ReceiveEventArgs.cs" Description="文件已成功备份为 C:\Users\dell\Desktop\temp\相关的基础框架\THOK.UDP\Backup\ReceiveEventArgs.cs">
+</Event><Event ErrorLevel="0" Project="THOK.UDP" Source="Server.cs" Description="文件已成功备份为 C:\Users\dell\Desktop\temp\相关的基础框架\THOK.UDP\Backup\Server.cs">
+</Event><Event ErrorLevel="0" Project="THOK.UDP" Source="Util\MessageGenerator.cs" Description="文件已成功备份为 C:\Users\dell\Desktop\temp\相关的基础框架\THOK.UDP\Backup\Util\MessageGenerator.cs">
+</Event><Event ErrorLevel="0" Project="THOK.UDP" Source="Util\MessageParser.cs" Description="文件已成功备份为 C:\Users\dell\Desktop\temp\相关的基础框架\THOK.UDP\Backup\Util\MessageParser.cs">
+</Event><Event ErrorLevel="0" Project="THOK.UDP" Source="Properties\AssemblyInfo.cs" Description="文件已成功备份为 C:\Users\dell\Desktop\temp\相关的基础框架\THOK.UDP\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="THOK.UDP" Source="THOK.UDP.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="THOK.UDP" Source="THOK.UDP.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="THOK.UDP" Source="THOK.UDP.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>

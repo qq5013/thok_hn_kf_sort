@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+	<LogLevel>DEBUG</LogLevel>
+	<Attributes>
+		<Attribute Name="PrintLabel" Value="True" />
+	</Attributes>
+	<Services>
+		<Service Name="UDPService" Type="THOK.MCP.Service.UDP.dll, THOK.MCP.Service.UDP.UDPService" ConfigFile="UDP.xml" />
+	</Services>
+	<Processes>
+		<Process Name="MessageProcess" Type="THOK.AS.OTS.dll, THOK.AS.OTS.Process.MessageProcess">
+			<Item ServiceName="UDPService" ItemName="SORTNO" />
+		</Process>
+	</Processes>
+</Configuration>

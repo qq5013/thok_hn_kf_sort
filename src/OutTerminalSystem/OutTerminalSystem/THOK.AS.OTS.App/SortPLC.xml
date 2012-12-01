@@ -1,0 +1,8 @@
+﻿<?xml version='1.0' ?>
+<Config>
+  <OPCServer ConnectionString="OPC.SimaticNET">
+    <OPCGroup GroupName="DefaultGroup" GroupString="S7:[@LOCALSERVER]" UpdateRate="250">
+      <OPCItem ItemName="CacheOrderSortNoes" ClientHandler="24" OPCItemName="DB1,INT0,11" ItemType="READ" IsActive="true"/>
+    </OPCGroup>
+  </OPCServer>
+</Config>
