@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CacheChannel" targetNamespace="http://tempuri.org/CacheChannel.xsd" xmlns:mstns="http://tempuri.org/CacheChannel.xsd" xmlns="http://tempuri.org/CacheChannel.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CacheChannel" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="CacheChannel" msprop:Generator_DataSetName="CacheChannel">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CacheChannel" msprop:Generator_UserTableName="CacheChannel" msprop:Generator_RowDeletedName="CacheChannelRowDeleted" msprop:Generator_TableClassName="CacheChannelDataTable" msprop:Generator_RowChangedName="CacheChannelRowChanged" msprop:Generator_RowClassName="CacheChannelRow" msprop:Generator_RowChangingName="CacheChannelRowChanging" msprop:Generator_RowEvArgName="CacheChannelRowChangeEvent" msprop:Generator_RowEvHandlerName="CacheChannelRowChangeEventHandler" msprop:Generator_TablePropName="_CacheChannel" msprop:Generator_TableVarName="tableCacheChannel" msprop:Generator_RowDeletingName="CacheChannelRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CHANNELCODE" msprop:Generator_UserColumnName="CHANNELCODE" msprop:Generator_ColumnPropNameInRow="CHANNELCODE" msprop:Generator_ColumnVarNameInTable="columnCHANNELCODE" msprop:Generator_ColumnPropNameInTable="CHANNELCODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CIGARETTECODE" msprop:Generator_UserColumnName="CIGARETTECODE" msprop:Generator_ColumnPropNameInRow="CIGARETTECODE" msprop:Generator_ColumnVarNameInTable="columnCIGARETTECODE" msprop:Generator_ColumnPropNameInTable="CIGARETTECODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CIGARETTENAME" msprop:Generator_UserColumnName="CIGARETTENAME" msprop:Generator_ColumnPropNameInRow="CIGARETTENAME" msprop:Generator_ColumnVarNameInTable="columnCIGARETTENAME" msprop:Generator_ColumnPropNameInTable="CIGARETTENAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BARCODE" msprop:Generator_UserColumnName="BARCODE" msprop:Generator_ColumnPropNameInRow="BARCODE" msprop:Generator_ColumnVarNameInTable="columnBARCODE" msprop:Generator_ColumnPropNameInTable="BARCODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="QUANTITY" msprop:Generator_UserColumnName="QUANTITY" msprop:Generator_ColumnPropNameInRow="QUANTITY" msprop:Generator_ColumnVarNameInTable="columnQUANTITY" msprop:Generator_ColumnPropNameInTable="QUANTITYColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CHECKTIME" msprop:Generator_UserColumnName="CHECKTIME" msprop:Generator_ColumnPropNameInRow="CHECKTIME" msprop:Generator_ColumnVarNameInTable="columnCHECKTIME" msprop:Generator_ColumnPropNameInTable="CHECKTIMEColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

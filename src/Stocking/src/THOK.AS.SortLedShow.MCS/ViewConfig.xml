@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="gb2312"?>
+  <Application>
+  <Caption MinBox="true" MaxBox="true"/>
+  <Title Visible="false"/>
+  <MenuBar Width="180"/>
+  <MenuItem Height="22"/>
+  <Menus Name="系统">
+    <Menu Name="参数设置" Type="THOK.AS.Stocking.View.SortingLedParameterForm,THOK.AS.Stocking.dll"/>
+  </Menus>
+</Application>

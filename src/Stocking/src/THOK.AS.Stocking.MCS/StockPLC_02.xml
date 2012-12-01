@@ -1,0 +1,19 @@
+﻿<?xml version='1.0' ?>
+<Config>
+	<OPCServer ConnectionString="OPC.SimaticNET">
+		<OPCGroup GroupName="DefaultGroup" GroupString="S7:[@LOCALSERVER]" UpdateRate="350">
+
+			<OPCItem ItemName="RestartData" ClientHandler="1" OPCItemName="DB1,INT142,1"  ItemType="WRITE"/>			
+
+			<OPCItem ItemName="Scanner_DirectoryData_02" ClientHandler="2" OPCItemName="DB1,INT2,2" ItemType="WRITE"/>
+			<OPCItem ItemName="Scanner_DirectoryData_03" ClientHandler="3" OPCItemName="DB1,INT6,2" ItemType="WRITE"/>
+
+			<OPCItem ItemName="ReScanOk_02" ClientHandler="4" OPCItemName="DB1,INT102,1" ItemType="READ"/>
+			<OPCItem ItemName="ReScanOk_03" ClientHandler="5" OPCItemName="DB1,INT106,1" ItemType="READ"/>
+			
+			<OPCItem ItemName="Show_02" ClientHandler="6" OPCItemName="DB1,INT122,1" ItemType="READ"/>
+			<OPCItem ItemName="Show_03" ClientHandler="7" OPCItemName="DB1,INT126,1" ItemType="READ"/>
+			
+		</OPCGroup>
+	</OPCServer>
+</Config>

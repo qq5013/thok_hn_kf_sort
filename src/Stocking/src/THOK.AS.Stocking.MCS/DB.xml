@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Connections>
+  <Connection Name="DefaultConnection" DatabaseType="SQLSERVER">
+    <ConnectionString Value="server=.;database=StockDB;uid=sa;" />
+    <Password Name="password" Value="65CED0851FFD283F" />
+  </Connection>
+  <Connection Name="ServerConnection" DatabaseType="SQLSERVER">
+    <ConnectionString Value="server=.;database=Logistics;uid=sa;" />
+    <Password Name="password" Value="65CED0851FFD283F" />
+  </Connection>
+  <Connection Name="WESConnection" DatabaseType="SQLSERVER">
+    <ConnectionString Value="server=.;database=THOKWES;uid=sa;" />
+    <Password Name="password" Value="65CED0851FFD283F" />
+  </Connection>
+	<Connection Name="WMSConnection" DatabaseType="SQLSERVER">
+		<ConnectionString Value="server=.;database=THOK_WMS_DATA;uid=sa;" />
+		<Password Name="password" Value="65CED0851FFD283F" />
+	</Connection>
+</Connections>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration>
+  <LogLevel>DEBUG</LogLevel>
+  <Attributes>
+    <Attribute Name="MaxLEDFormTitle" Value="德阳烟草分拣车间信息屏" />
+    <Attribute Name="MaxLEDFormTop" Value="0" />
+    <Attribute Name="MaxLEDFormLeft" Value="0" />
+    <Attribute Name="MaxLEDFormWidth" Value="512" />
+    <Attribute Name="MaxLEDFormHeight" Value="256" />
+  </Attributes>
+  <Services>
+    <Service Name="UDPService" Type="THOK.MCP.Service.UDP.dll, THOK.MCP.Service.UDP.UDPService" ConfigFile="UDP.xml" />
+  </Services>
+  <Processes>
+    <Process Name="SupplyRefreshDataRequestProcess" Type="THOK.AS.Stocking.dll, THOK.AS.Stocking.Process.SupplyRefreshDataRequestProcess">
+      <Item ServiceName="UDPService" ItemName="RefreshData" />
+    </Process>
+  </Processes>
+</Configuration>

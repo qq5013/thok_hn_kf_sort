@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="StockTempDataSet" targetNamespace="http://tempuri.org/StockTempDataSet.xsd" xmlns:mstns="http://tempuri.org/StockTempDataSet.xsd" xmlns="http://tempuri.org/StockTempDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="StockTempDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="StockTempDataSet" msprop:Generator_DataSetName="StockTempDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="StockTempTable" msprop:Generator_UserTableName="StockTempTable" msprop:Generator_RowDeletedName="StockTempTableRowDeleted" msprop:Generator_RowChangedName="StockTempTableRowChanged" msprop:Generator_RowClassName="StockTempTableRow" msprop:Generator_RowChangingName="StockTempTableRowChanging" msprop:Generator_RowEvArgName="StockTempTableRowChangeEvent" msprop:Generator_RowEvHandlerName="StockTempTableRowChangeEventHandler" msprop:Generator_TableClassName="StockTempTableDataTable" msprop:Generator_TableVarName="tableStockTempTable" msprop:Generator_RowDeletingName="StockTempTableRowDeleting" msprop:Generator_TablePropName="StockTempTable">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CIGARETTECODE" msprop:Generator_UserColumnName="CIGARETTECODE" msprop:Generator_ColumnPropNameInRow="CIGARETTECODE" msprop:Generator_ColumnVarNameInTable="columnCIGARETTECODE" msprop:Generator_ColumnPropNameInTable="CIGARETTECODEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CIGARETTENAME" msprop:Generator_UserColumnName="CIGARETTENAME" msprop:Generator_ColumnPropNameInRow="CIGARETTENAME" msprop:Generator_ColumnVarNameInTable="columnCIGARETTENAME" msprop:Generator_ColumnPropNameInTable="CIGARETTENAMEColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="QUANTITY" msprop:Generator_UserColumnName="QUANTITY" msprop:Generator_ColumnPropNameInRow="QUANTITY" msprop:Generator_ColumnVarNameInTable="columnQUANTITY" msprop:Generator_ColumnPropNameInTable="QUANTITYColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
