@@ -59,6 +59,44 @@ namespace THOK.AS.Schedule
             }
         }
 
+        public void DownloadData(string orderDate, int batchNo, string historyOrderDate)
+        {
+            ClearSchedule(orderDate, batchNo);
+            DateTime dtHistoryOrderDate = DateTime.Parse(historyOrderDate);
+            DateTime dtOrderDate = DateTime.Parse(orderDate);
+            using (PersistentManager pm = new PersistentManager())
+            {
+                pm.BeginTransaction();
+                try
+                {
+                    LineScheduleDao lsDao = new LineScheduleDao();
+                    OrderDao orderDao = new OrderDao();
+
+                    //查询已优化过的线路，以进行排除。
+                    string routes = lsDao.FindRoutes(orderDate);
+
+                    //下载订单主表
+                    DataTable masterTable = orderDao.FindHistoryOrderMaster(dtOrderDate, batchNo, routes, dtHistoryOrderDate);
+                    orderDao.BatchInsertMaster(masterTable);
+                    if (OnSchedule != null)
+                        OnSchedule(this, new ScheduleEventArgs(1, "数据清除与下载", 13, 14));
+
+                    //下载订单明细
+                    DataTable detailTable = orderDao.FindHistoryOrderDetail(dtOrderDate, batchNo, routes, dtHistoryOrderDate);
+                    orderDao.BatchInsertDetail(detailTable);
+                    if (OnSchedule != null)
+                        OnSchedule(this, new ScheduleEventArgs(1, "数据清除与下载", 14, 14));
+
+                    pm.Commit();
+                }
+                catch (Exception e)
+                {
+                    pm.Rollback();
+                    throw e;
+                }                
+            }
+        }
+
         /// <summary>
         /// 清除历史数据，并下载数据。
         /// </summary>
@@ -697,5 +735,6 @@ namespace THOK.AS.Schedule
         } 
 
         #endregion
+
     }
 }

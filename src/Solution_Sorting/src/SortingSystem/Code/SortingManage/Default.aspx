@@ -92,18 +92,29 @@
                      <asp:TextBox ID="txtOrderDate" runat="server" CssClass="TextBox" Width="80"  onpropertychange="GetBatchNo();"></asp:TextBox>
                      <input type="button"  class="ButtonDate" onclick="setday(document.getElementById('txtOrderDate'))" id="Button1" />
                   </td>
-                  <td style="width:35px;">批次</td>
+                  <td style="width:80px;">批次</td>
                   <td style="width:80px;">
-                      <asp:DropDownList ID="ddlBatchNo" runat="server">
-                          
-                      </asp:DropDownList></td>
-                      <td style=""></td>
+                      <asp:DropDownList ID="ddlBatchNo" runat="server">                          
+                      </asp:DropDownList>
+                  </td>
+                  <td style="">                    
+                  </td>                 
+                </tr>
+                <tr style="padding:20 10 10 10">
+                  <td style="width:60px;">&nbsp;&nbsp;原始订单日期</td>
+                  <td style="width:120px;">
+                     <asp:TextBox ID="txtHistoryOrderDate" runat="server" CssClass="TextBox" Width="80" ></asp:TextBox>
+                     <input type="button"  class="ButtonDate" onclick="setday(document.getElementById('txtHistoryOrderDate'))" id="Button3" />
+                  </td>
+                  <td style="width:80px;" colspan="3">
+                      <asp:CheckBox ID="cbUseHistoryData" runat="server" Text="使用备份历史数据" Width="116px" />
+                  </td>              
                 </tr>
              </table>
             
             <table cellpadding="0" cellspacing="5" style="width: 460px; border-right: silver 1px solid; border-left: silver 1px solid;" align="center">
                 <tr style="display: block; width: 100%">
-                    <td style="width: 480px; height: 41px;">
+                    <td style="width: 499px; height: 41px;">
                         <table cellspacing="3" style="width: 100%; border-bottom: #d8dfe7 1px dashed">
                            <tr style="display: block; width: 100%">
                                 <td colspan="4" style="padding-left: 3em; height: 18px">数据提取与备份</td>
@@ -124,7 +135,7 @@
             
             <table cellpadding="0" cellspacing="5" style="width: 460px; border-right: silver 1px solid; border-left: silver 1px solid;"  align="center">
                 <tr style="display: block; width: 100%">
-                    <td style="width: 480px; height: 41px;">
+                    <td style="width: 500px; height: 41px;">
                         <table cellspacing="3" style="width: 100%; border-bottom: #d8dfe7 1px dashed">
                            <tr style="display: block; width: 100%">
                                 <td colspan="4" style="padding-left: 3em; height: 18px">
