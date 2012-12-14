@@ -322,6 +322,16 @@ namespace THOK.AS.Dao
             BatchInsert(dtData, "AS_I_ORDERDETAIL");
         }
 
+        public void BatchInsertMasterHistory(DataTable dtData)
+        {
+            BatchInsert(dtData, "AS_I_ORDERMASTER_HISTORY");
+        }
+
+        public void BatchInsertDetailHistory(DataTable dtData)
+        {
+            BatchInsert(dtData, "AS_I_ORDERDETAIL_HISTORY");
+        }
+
         /// <summary>
         /// 2010-11-19
         /// </summary>
@@ -332,6 +342,15 @@ namespace THOK.AS.Dao
             ExecuteNonQuery(sql);
 
             sql = string.Format("DELETE FROM AS_I_ORDERMASTER WHERE ORDERDATE < '{0}'", orderDate);
+            ExecuteNonQuery(sql);
+        }
+
+        public void DeleteBakHistory(string orderDate)
+        {
+            string sql = string.Format("DELETE FROM AS_I_ORDERDETAIL_HISTORY WHERE ORDERDATE < '{0}'", orderDate);
+            ExecuteNonQuery(sql);
+
+            sql = string.Format("DELETE FROM AS_I_ORDERMASTER_HISTORY WHERE ORDERDATE < '{0}'", orderDate);
             ExecuteNonQuery(sql);
         }
 

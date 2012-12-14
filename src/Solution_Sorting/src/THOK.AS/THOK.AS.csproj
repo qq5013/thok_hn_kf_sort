@@ -99,6 +99,7 @@
     <Compile Include="Dao\OrderDao.cs" />
     <Compile Include="Dao\PalletDao.cs" />
     <Compile Include="Dao\UploadSortingDao.cs" />
+    <Compile Include="Schedule\DownLoadData.cs" />
     <Compile Include="Schedule\HashTableHandle.cs" />
     <Compile Include="Schedule\ProcessState.cs" />
     <Compile Include="Schedule\ScheduleEventArgs.cs" />
