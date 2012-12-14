@@ -69,11 +69,11 @@ namespace THOK.AS.Schedule
                 ProcessState.Step = 1;
 
                 DateTime dtOrder = DateTime.Parse(orderDate);
-                string historyDate = dtOrder.AddDays(-7).ToShortDateString();
+                string historyDate = dtOrder.AddDays(-120).ToShortDateString();
                 using (PersistentManager pm = new PersistentManager())
                 {
                     BatchDao batchDao = new BatchDao();
-                    using (PersistentManager ssPM = new PersistentManager(dataBase))
+                    using (PersistentManager ssPM = new PersistentManager("OuterConnection"))
                     {
                         SalesSystemDao ssDao = new SalesSystemDao();
                         ssDao.SetPersistentManager(ssPM);
