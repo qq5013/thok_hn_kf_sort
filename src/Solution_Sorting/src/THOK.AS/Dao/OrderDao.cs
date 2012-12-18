@@ -391,8 +391,8 @@ namespace THOK.AS.Dao
 
         internal DataTable FindHistoryOrderMaster(DateTime dtOrderDate, int batchNo, string routes, DateTime dtHistoryOrderDate)
         {
-            string sql = @"SELECT '{0}', {1},ORDERID,AREACODE," +
-                            " ROUTECODE,CUSTOMERCODE,SORTID " +
+            string sql = @"SELECT '{0}', {1},ORDERID,ORGCODE,AREACODE," +
+                            " ROUTECODE,CUSTOMERCODE,SORTID,DETAILNUM,IS_IMPORT" +
                             " FROM AS_I_ORDERMASTER_HISTORY" +
                             " WHERE ORDERDATE = '{2}' AND ROUTECODE NOT IN ({3})";
             return ExecuteQuery(string.Format(sql, dtOrderDate, batchNo, dtHistoryOrderDate.ToString("yyyyMMdd"), routes)).Tables[0];
@@ -400,10 +400,14 @@ namespace THOK.AS.Dao
 
         internal DataTable FindHistoryOrderDetail(DateTime dtOrderDate, int batchNo, string routes, DateTime dtHistoryOrderDate)
         {
-            string sql = @"SELECT A.ORDERID,A.CIGARETTECODE, " +
-                            " A.CIGARETTENAME,A.QUANTITY,0,0,'{0}',{1}" +
-                            " FROM AS_I_ORDERDETAIL_HISTORY A " +
-                            " LEFT JOIN AS_I_ORDERMASTER_HISTORY B ON A.ORDERID = B.ORDERID" +
+            //string sql = @"SELECT A.ORDERID,A.CIGARETTECODE, " +
+            //                " A.CIGARETTENAME,A.QUANTITY,0,0,'{0}',{1}" +
+            //                " FROM AS_I_ORDERDETAIL_HISTORY A " +
+            //                " LEFT JOIN AS_I_ORDERMASTER_HISTORY B ON A.ORDERID = B.ORDERID" +
+            //                " WHERE B.ORDERDATE = '{2}' AND B.ROUTECODE NOT IN ({3})";
+            string sql = @"SELECT A.ORDERDETAILID, A.ORDERID, A.CIGARETTECODE, " +
+                            "  A.CIGARETTENAME,'Ìõ' AS UTINNAME,A.QUANTITY,0,0,'{0}',{1},A.QTYDEMAND," +
+                            " A.PRICE,A.AMOUNT,'0' AS IS_IMPORT  from AS_I_ORDERDETAIL_HISTORY A LEFT JOIN AS_I_ORDERMASTER_HISTORY B ON A.ORDERID = B.ORDERID" +
                             " WHERE B.ORDERDATE = '{2}' AND B.ROUTECODE NOT IN ({3})";
             return ExecuteQuery(string.Format(sql, dtOrderDate, batchNo, dtHistoryOrderDate.ToString("yyyyMMdd"), routes)).Tables[0];
         }

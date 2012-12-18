@@ -87,7 +87,7 @@
             </asp:Panel>
             <table width="460" height="50px" style="background-color:#c1d9f3;" align="center">
                 <tr style="padding:20 10 10 10">
-                  <td style="width:60px;">&nbsp;&nbsp;分拣日期</td>
+                  <td style="width:115px;">&nbsp;&nbsp;分拣日期</td>
                   <td style="width:120px;">
                      <asp:TextBox ID="txtOrderDate" runat="server" CssClass="TextBox" Width="80"  onpropertychange="GetBatchNo();"></asp:TextBox>
                      <input type="button"  class="ButtonDate" onclick="setday(document.getElementById('txtOrderDate'))" id="Button1" />
@@ -97,16 +97,16 @@
                       <asp:DropDownList ID="ddlBatchNo" runat="server">                          
                       </asp:DropDownList>
                   </td>
-                  <td style="">                    
+                  <td style="WIDTH: 108px">                    
                   </td>                 
                 </tr>
                 <tr style="padding:20 10 10 10">
-                  <td style="width:60px;">&nbsp;&nbsp;原始订单日期</td>
-                  <td style="width:120px;">
+                  <td style="width:115px; height: 32px;">&nbsp;&nbsp;原始订单日期</td>
+                  <td style="width:120px; height: 32px;">
                      <asp:TextBox ID="txtHistoryOrderDate" runat="server" CssClass="TextBox" Width="80" ></asp:TextBox>
                      <input type="button"  class="ButtonDate" onclick="setday(document.getElementById('txtHistoryOrderDate'))" id="Button3" />
                   </td>
-                  <td style="width:80px;" colspan="3">
+                  <td style="width:80px; height: 32px;" colspan="3">
                       <asp:CheckBox ID="cbUseHistoryData" runat="server" Text="使用备份历史数据" Width="116px" />
                   </td>              
                 </tr>
