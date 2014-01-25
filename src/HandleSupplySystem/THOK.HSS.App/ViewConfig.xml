@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="gb2312"?>
+<Application>
+	<Caption MinBox="true" MaxBox="true"/>
+	<Title Visible="false"/>
+	<MenuBar Width="180"/>
+	<MenuItem Height="25"/>
+
+	<Menus Name="操作">
+		<Menu Name="补货作业" Type="THOK.HSS.View.HandSupplyForm,THOK.HSS.dll"/>
+	</Menus>
+	<Menus Name="查询">
+		<Menu Name="卷烟查询" Type="THOK.HSS.View.CigaretteQueryForm,THOK.HSS.dll"/>
+		<Menu Name="全部作业查询" Type="THOK.HSS.View.AllTaskQueryForm,THOK.HSS.dll"/>
+	</Menus>
+	<Menus Name="系统">
+		<Menu Name="参数设置" Type="THOK.HSS.View.ParameterForm,THOK.HSS.dll"/>
+	</Menus>
+</Application>

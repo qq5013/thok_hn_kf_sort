@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="HandSupplyData" targetNamespace="http://tempuri.org/HandSupplyData.xsd" xmlns:mstns="http://tempuri.org/HandSupplyData.xsd" xmlns="http://tempuri.org/HandSupplyData.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="HandSupplyData" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="HandSupplyData" msprop:Generator_DataSetName="HandSupplyData">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="handSupplyData" msprop:Generator_UserTableName="handSupplyData" msprop:Generator_RowDeletedName="handSupplyDataRowDeleted" msprop:Generator_RowChangedName="handSupplyDataRowChanged" msprop:Generator_RowClassName="handSupplyDataRow" msprop:Generator_RowChangingName="handSupplyDataRowChanging" msprop:Generator_RowEvArgName="handSupplyDataRowChangeEvent" msprop:Generator_RowEvHandlerName="handSupplyDataRowChangeEventHandler" msprop:Generator_TableClassName="handSupplyDataDataTable" msprop:Generator_TableVarName="tablehandSupplyData" msprop:Generator_RowDeletingName="handSupplyDataRowDeleting" msprop:Generator_TablePropName="handSupplyData">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Column1" msprop:Generator_UserColumnName="Column1" msprop:Generator_ColumnVarNameInTable="columnColumn1" msprop:Generator_ColumnPropNameInRow="Column1" msprop:Generator_ColumnPropNameInTable="Column1Column" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
