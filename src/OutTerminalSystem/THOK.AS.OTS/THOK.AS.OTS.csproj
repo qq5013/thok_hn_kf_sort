@@ -36,7 +36,15 @@
     <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="DataGridViewAutoFilter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\DataGridViewAutoFilter.dll</HintPath>
+      <HintPath>..\..\..\lib\DataGridViewAutoFilter.dll</HintPath>
+    </Reference>
+    <Reference Include="DBRabbit, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\DBRabbit.dll</HintPath>
+    </Reference>
+    <Reference Include="ESBasic, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\ESBasic.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
@@ -52,19 +60,15 @@
     <Reference Include="System.Xml" />
     <Reference Include="THOK.MCP, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\THOK.MCP.dll</HintPath>
+      <HintPath>..\..\..\lib\THOK.MCP.dll</HintPath>
     </Reference>
     <Reference Include="THOK.MCP.Service.UDP, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\THOK.MCP.Service.UDP.dll</HintPath>
+      <HintPath>..\..\..\lib\THOK.MCP.Service.UDP.dll</HintPath>
     </Reference>
     <Reference Include="THOK.ParamUtil, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\THOK.ParamUtil.dll</HintPath>
-    </Reference>
-    <Reference Include="THOK.Util, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\THOK.Util.dll</HintPath>
+      <HintPath>..\..\..\lib\THOK.ParamUtil.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
