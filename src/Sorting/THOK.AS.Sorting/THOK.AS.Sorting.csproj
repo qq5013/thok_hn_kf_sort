@@ -37,11 +37,23 @@
     <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="DataGridViewAutoFilter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\lib\DataGridViewAutoFilter.dll</HintPath>
+      <HintPath>..\..\..\lib\DataGridViewAutoFilter.dll</HintPath>
+    </Reference>
+    <Reference Include="DBRabbit, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\DBRabbit.dll</HintPath>
+    </Reference>
+    <Reference Include="ESBasic, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\ESBasic.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="OpcRcw.Comn, Version=1.10.1.21, Culture=neutral, PublicKeyToken=9a40e993cbface53">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\OpcRcw.Comn.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -52,27 +64,23 @@
     <Reference Include="System.Xml" />
     <Reference Include="THOK.AF.View, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\lib\THOK.AF.View.dll</HintPath>
+      <HintPath>..\..\..\lib\THOK.AF.View.dll</HintPath>
     </Reference>
     <Reference Include="THOK.MCP, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\lib\THOK.MCP.dll</HintPath>
+      <HintPath>..\..\..\lib\THOK.MCP.dll</HintPath>
     </Reference>
     <Reference Include="THOK.MCP.Service.Package, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\lib\THOK.MCP.Service.Package.dll</HintPath>
+      <HintPath>..\..\..\lib\THOK.MCP.Service.Package.dll</HintPath>
     </Reference>
     <Reference Include="THOK.ParamUtil, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\lib\THOK.ParamUtil.dll</HintPath>
+      <HintPath>..\..\..\lib\THOK.ParamUtil.dll</HintPath>
     </Reference>
     <Reference Include="THOK.UDP, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\lib\THOK.UDP.dll</HintPath>
-    </Reference>
-    <Reference Include="THOK.Util, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\lib\THOK.Util.dll</HintPath>
+      <HintPath>..\..\..\lib\THOK.UDP.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
