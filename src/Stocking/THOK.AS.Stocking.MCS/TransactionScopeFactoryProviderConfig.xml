@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TransactionScopeFactoryProvider>
+	<property name="DBOperationLogger" type="DBRabbit.Logger.DBOperationLogger,DBRabbit.dll" />
+	<property name="MasterDataConfigurationDictionary">
+		<key name="master">
+			<DataConfiguration type="DBRabbit.Config.DataConfiguration,DBRabbit.dll">
+				<DataBaseType value="SqlServer" desc="" />
+				<ORMappingType value="Emit" desc="" />
+				<CommandTimeoutInSecs value="" desc="" />
+				<ConnectionLifetimeInSecs value="" desc="" />
+				<MinPoolSize value="" desc="" />
+				<MaxPoolSize value="" desc="" />
+				<DataBaseSchemaFileName value="" desc="" />
+				<DataSource value="" desc="" />
+				<IP value="." desc="" />
+				<DataBaseName value="StockDB" desc="" />
+				<User value="sa" desc="" />
+				<Password value="123456" desc="" />
+			</DataConfiguration>
+		</key>
+		<key name="ServerConnection">
+			<DataConfiguration type="DBRabbit.Config.DataConfiguration,DBRabbit.dll">
+				<DataBaseType value="SqlServer" desc="" />
+				<ORMappingType value="Emit" desc="" />
+				<CommandTimeoutInSecs value="" desc="" />
+				<ConnectionLifetimeInSecs value="" desc="" />
+				<MinPoolSize value="" desc="" />
+				<MaxPoolSize value="" desc="" />
+				<DataBaseSchemaFileName value="" desc="" />
+				<DataSource value="" desc="" />
+				<IP value="10.89.56.31" desc="" />
+				<DataBaseName value="Logistics" desc="" />
+				<User value="sa" desc="" />
+				<Password value="thok_admin" desc="" />
+			</DataConfiguration>
+		</key>
+	</property>
+	<property name="SlaveSuitDictionary">
+	</property>
+</TransactionScopeFactoryProvider>
