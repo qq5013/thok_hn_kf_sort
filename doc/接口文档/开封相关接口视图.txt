@@ -1,0 +1,3 @@
+分拣用视图 NGPHNAMW(数据库名)
+v_delivedata 
+仓储用视图 NGPHNA(数据库名)
